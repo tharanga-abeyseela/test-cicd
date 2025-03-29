@@ -37,7 +37,7 @@ jobs:
           BRANCH=${{ steps.get_branch.outputs.branch }}
           echo "Detected branch: $BRANCH"
           if [[ "$BRANCH" =~ ^[A-Za-z0-9]+$ ]]; then
-            echo "branch_type=jira" >> $GITHUB_OUTPUT
+            echo "branch_type=${GITHUB_REF##*/}" >> $GITHUB_OUTPUT
           fi
           
       # Optional: Output the branch type for logging.
