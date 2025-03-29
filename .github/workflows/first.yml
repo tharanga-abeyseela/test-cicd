@@ -46,4 +46,5 @@ jobs:
 
       # Step 4: Deploy based on branch type.
       - name: Deploy Based on Branch Type
-        run: echo "Environment: ${{ github.event.inputs.environment }}"
+        run: |
+         echo "Environment: ${{ github.event.inputs.environment }}"
