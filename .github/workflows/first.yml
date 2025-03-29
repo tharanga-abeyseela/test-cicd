@@ -2,6 +2,8 @@ name: Deploy Branch Workflow
 
 on:
   workflow_dispatch:
+  branches:
+      - '**'
     inputs:
       environment:
         description: 'Deployment environment'
