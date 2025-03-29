@@ -1,10 +1,6 @@
 name: Deploy Branch Workflow
 
 on:
-  push:
-    # Trigger on any branch push.
-    branches:
-      - '**'
   workflow_dispatch:
     inputs:
       environment:
